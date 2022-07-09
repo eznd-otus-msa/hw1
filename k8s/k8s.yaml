@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: otus-msa-hw1
+  labels:
+    app: eznd-otus-msa-hw1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: eznd-otus-msa-hw1
+  template:
+    metadata:
+      labels:
+        name: otus-msa-hw1
+        app: eznd-otus-msa-hw1
+    spec:
+      containers:
+        - name: otus-msa-hw1
+          image: "eznd/otus-msa-hw1"
