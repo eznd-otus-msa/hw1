@@ -17,4 +17,5 @@ spec:
     spec:
       containers:
         - name: otus-msa-hw1
-          image: "eznd/otus-msa-hw1"
+          image: "eznd/otus-msa-hw1:v0.0.2"
+

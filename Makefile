@@ -10,8 +10,8 @@ docker-start:
 docker-stop:
 	docker stop otus-msa-hw1
 
-k8s-start:
+k8s-apply:
 	kubectl apply -f k8s/k8s.yaml
 
-k8s-stop:
+k8s-delete:
 	kubectl delete deployment otus-msa-hw1
