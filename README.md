@@ -1,4 +1,4 @@
-## ДЗ 1 курса OTUS Microservice architect
+## ДЗ №1 курса OTUS Microservice architect
 
 1. ```
    Создать минимальный сервис, который отвечает на порту 8000, 
