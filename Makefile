@@ -11,7 +11,10 @@ docker-stop:
 	docker stop otus-msa-hw1
 
 k8s-apply:
-	kubectl apply -f k8s/k8s.yaml
+	kubectl apply -f k8s/
 
 k8s-delete:
-	kubectl delete deployment otus-msa-hw1
+	kubectl delete deployment/otus-msa-hw1 service/otus-msa-hw1 ingress/ig-otus-msa-hw1
+
+newman:
+	newman run postman/collection.json

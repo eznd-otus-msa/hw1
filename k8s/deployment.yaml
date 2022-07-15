@@ -18,4 +18,16 @@ spec:
       containers:
         - name: otus-msa-hw1
           image: "eznd/otus-msa-hw1:v0.0.2"
+          livenessProbe:
+            httpGet:
+              path: /probe/live
+              port: 8000
+            initialDelaySeconds: 3
+            periodSeconds: 3
+          readinessProbe:
+            httpGet:
+              path: /probe/ready
+              port: 8000
+            initialDelaySeconds: 3
+            periodSeconds: 3
 

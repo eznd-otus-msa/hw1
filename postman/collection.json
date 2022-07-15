@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "398a5925-ce3b-4352-a2a0-705f5e2380a1",
+		"name": "OTUS-MSA-HW1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/health",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ready probe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/probe/ready",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"probe",
+						"ready"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "live probe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/probe/live",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"probe",
+						"live"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "default response",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/some/path",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"some",
+						"path"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://arch.homework"
+		}
+	]
+}
