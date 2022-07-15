@@ -30,4 +30,4 @@
    В Ingress-е должно быть правило, которое форвардит все запросы с /otusapp/{student name}/* на сервис с rewrite-ом пути. Где {student name} - это имя студента
    ```
    
-    Отдельный инресс с рерайтом редиректит `http://arch.homework/otusapp/ezinder/($1)` на `http://arch.homework/($1`
+    Отдельный ингресс с рерайтом редиректит `http://arch.homework/otusapp/ezinder/($1)` на `http://arch.homework/($1`
