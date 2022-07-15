@@ -14,7 +14,7 @@ k8s-apply:
 	kubectl apply -f k8s/
 
 k8s-delete:
-	kubectl delete deployment/otus-msa-hw1 service/otus-msa-hw1 ingress/ig-otus-msa-hw1
+	kubectl delete deployment/otus-msa-hw1 service/otus-msa-hw1 ingress/ig-otus-msa-hw1 ingress/ig-otus-msa-hw1-rewrite
 
 newman:
 	newman run postman/collection.json

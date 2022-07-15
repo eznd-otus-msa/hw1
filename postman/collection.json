@@ -75,6 +75,45 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "rewrite: healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/otusapp/ezinder/health",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"otusapp",
+						"ezinder",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rewrite: default response",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/otusapp/ezinder/some/path",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"otusapp",
+						"ezinder",
+						"some",
+						"path"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
