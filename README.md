@@ -1,4 +1,5 @@
-## ДЗ №1 курса OTUS Microservice architect
+# Курс OTUS Microservice architect
+## ДЗ №1 - «Основы работы с Kubernetes»
 
 1. ```
    Создать минимальный сервис, который отвечает на порту 8000, 
@@ -30,4 +31,4 @@
    В Ingress-е должно быть правило, которое форвардит все запросы с /otusapp/{student name}/* на сервис с rewrite-ом пути. Где {student name} - это имя студента
    ```
    
-    Отдельный ингресс с рерайтом редиректит `http://arch.homework/otusapp/ezinder/($1)` на `http://arch.homework/($1`
+    Отдельный ингресс с рерайтом редиректит `http://arch.homework/otusapp/ezinder/($1)` на `http://arch.homework/($1)`
